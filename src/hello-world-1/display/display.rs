@@ -42,7 +42,7 @@ struct Complex {
 // Similarly, implement `Display` for `Point2D`
 impl fmt::Display for Complex {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        // Customize so only `x` and `y` are denoted.
+        // Customize so only real` and `imag` are denoted.
         write!(f, "{} + {}i", self.real, self.imag)
     }
 }
